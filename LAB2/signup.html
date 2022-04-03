@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="main.css" type="text/css">
+    </head>
+    <body>
+        <h1 class="heading">Welcome to INTERNET-PROGRAMMING SHOP</h1>
+        <a href="login.html"><button class="topBtn" id="loginTop">로그인</button></a>
+        <a href="signup.html"><button class="topBtn">회원가입</button></a>
+        <hr class="line">
+        <h2 class="personal">개인정보 (필수)</h2>
+        <form method="get" class="form">
+            <p><label class="formEle">이름:
+                <input type="text" name="name" placeholder="이름을 입력하세요" autofocus></label></p>
+            <p><label class="formEle">생일:
+                <input type="date" name="birthday"></label></p>
+            <p><label class="formEle">학년:
+                <input type="number" name="grade" step="1"></label></p>
+            <p><label class="formEle">전화번호:
+                <input type="tel" name="tel" placeholder="(###) ###-####" pattern="\(\d{3}\) \d{3}-\d{4}"></label></p>
+            <p><label class="formEle">유저 아이디:
+                <input type="text" name="username" placeholder="아이디를 입력하세요" required></label></p>
+            <p><label class="formEle">비밀번호:
+                <input type="password" name="pass" placeholder="비밀번호 입력하세요" required></label></p>
+            <p><label class="formEle">비밀번호 확인:
+                <input type="password" name="checkPass" placeholder="비밀번호 확인" required></label></p>
+            <p>
+                <input type="submit" value="Signup" class="bottomBtn" id="submit">
+                <input type="reset" value="Cancel" class="bottomBtn" id="cancel">
+            </p>                
+        </form>
+        <hr class="line">
+    </body>
+</html>
