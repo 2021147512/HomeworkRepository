@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Login</title>
+        <link rel="stylesheet" href="main.css" type="text/css">
+    </head>
+    <body>
+        <h1 class="heading">Welcome to INTERNET-PROGRAMMING SHOP</h1>
+        <a href="index.html"><button class="topBtn" id="loginTop">메인페이지</button></a>
+        <a href="login.html"><button class="topBtn">로그인</button></a>
+        <a href="signup.html"><button class="topBtn">회원가입</button></a>
+        <hr class="line">
+        <h2 class="personal">회원 정보 (필수)</h2>
+        <form method="get" class="form">
+            <p><label class="formEle">유저 아이디:
+                <input type="text" name="username" placeholder="아이디를 입력하세요" required autofocus></label></p>
+            <p><label class="formEle">비밀번호:
+                <input type="password" name="pass" placeholder="비밀번호 입력하세요" required></label></p>
+            <p><label class="formEle">비밀번호 확인:
+                <input type="password" name="checkPass" placeholder="비밀번호 확인" required></label></p>
+            <p>
+                <input type="submit" value="로그인" class="bottomBtn" id="submit">
+                <input type="reset" value="회원가입" class="bottomBtn" id="signupKor">
+            </p>                
+        </form>
+        <hr class="line">
+    </body>
+</html>
