@@ -1,0 +1,279 @@
+.heading {
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 20px 0px 5px 20px;
+}
+
+.topBtn {
+    background-color: white;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#loginTop {
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+.topBtn:hover {
+    background-color: aliceblue;
+}
+
+.line {
+    height: 2px;
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+}
+
+.personal {
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    font-size: 15px;
+    font-weight: bold;
+    color: darkslategrey;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.form { 
+    padding: 0;
+    margin-left: 20px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.formEle {
+    padding: 0;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.bottomBtn {
+    font-size: 15px;
+    text-align: center;
+    width: 110px;
+    margin: 0px 0px 0px 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#submit {
+    background-color: lawngreen;
+}
+
+#cancel {
+    background-color: crimson;
+}
+
+#signupKor {
+    background-color: cornflowerblue;
+}
+
+
+
+.header {
+    box-sizing: content-box;
+    width: 1020px;
+    margin: auto;
+}
+
+#index_heading {
+    text-align: left;
+    font-size: 30px;
+    animation-duration: 2s;
+    animation-name: slidingtext;
+    margin: 10px 0px 10px 0px;
+}
+
+@keyframes slidingtext {
+    from {
+        margin-left: +1100px;
+        width: 120%;
+      }
+    
+      to {
+        width: 100%;
+      }
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+
+    box-sizing: content-box;
+    width: 1020px;
+    margin: auto;
+
+}
+
+.flex_container {
+    box-sizing: content-box;
+    width: 1020px;
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#image_header {
+    font-size: 20px;
+    text-align: left;
+}
+
+.hr {
+    width: 980px;
+    height: 1px;
+    background-color: black;
+}
+
+.image_container {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.arc_border {
+    flex-direction: row;
+    border: 2px solid black;
+    width: 220px;
+    height: 400px;
+    margin: 5px 5px 5px 5px;
+    padding: auto;
+}
+
+.img {
+    width: 150px;
+    height: 150px;
+}
+
+#arceus_img {
+    transition: transform 2s;
+}
+
+#arceus_img:hover {
+    transform: rotate(360deg);
+}
+
+#giratina_img {
+    transition: transform 2s;
+}
+
+#giratina_img:hover {
+    transform: scale(10,3);
+}
+
+.description_container {
+    flex-direction: column;
+}
+
+#description {
+    font-size: 15px;
+    height: 100px;
+}
+
+@media screen and (max-width:480px) {
+    .header{
+        /* box-sizing: content-box; */
+        width: auto;
+        margin: auto;
+    }
+    #index_heading {
+        text-align: left;
+        font-size: 20px;
+        animation-duration: 2s;
+        animation-name: slidingtext;
+        margin: 10px 0px 10px 0px;
+    }
+    
+    @keyframes slidingtext {
+        from {
+            margin-left: +480px;
+            width: 120%;
+          }
+        
+          to {
+            width: 100%;
+          }
+    }
+
+    #indexNav {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+    .flex_container {
+        justify-content: center;
+        width: auto;
+    }
+    .image_container {
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    #image_header {
+        text-align: center;
+    }
+
+    #description {
+        width: auto;
+        height: auto;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:800px) {
+    .header{
+        /* box-sizing: content-box; */
+        width: auto;
+        margin: auto;
+    }
+    #index_heading {
+        text-align: left;
+        font-size: 25px;
+        animation-duration: 2s;
+        animation-name: slidingtext;
+        margin: 10px 0px 10px 0px;
+    }
+    
+    @keyframes slidingtext {
+        from {
+            margin-left: +800px;
+            width: 120%;
+          }
+        
+          to {
+            width: 100%;
+          }
+    }
+    #indexNav {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+    .hr {
+        height: 1px;
+        background-color: black;
+        width: auto;
+    }
+    .flex_container {
+        justify-content: center;
+        width: auto;
+    }
+    .image_container {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #image_header {
+        text-align: center;
+    }
+    #description {
+        width: auto;
+        height: auto;
+    }
+}
