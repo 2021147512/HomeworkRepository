@@ -432,7 +432,7 @@ def removeNodeRecursive(em_ptr, im_ptr):
 
     # when there no nodes above or below respectively
     elif em_ptr.up == None:
-        em_ptr.down.up = None
+        em_ptr.down.up = NoneW
     
     elif em_ptr.down == None:
         em_ptr.up.down = None
